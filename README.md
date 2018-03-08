@@ -32,3 +32,34 @@ Ties everything together wraps everything at the top level and calls the LLVM co
 This will segfault/access invalid memory if the cfunc is called incorrectly
 
 
+###BUGS#####################
+
+
+Known bugs:
+The program breaks at a few places if you use a single argument input types because of the iterators on argument lists. Shouldn't take too long to fix.
+
+The typeVisitor class doesn't support some of the AST nodes that the parseAST class supports so it will break at the type inferece stage.
+
+Probably bugged:
+
+The type inference doesn't seem to apply the inferred types to every variable e.g the Assign variable and some of the return types. I have a work around in place at the moment.
+
+While/If/Cond statements aren't tested and almost certainly have a few small problems.
+
+
+TODOs for project:
+-Various #TODOs through the code
+-Test cases and a test program for iterating through all tests
+-A lot of commenting needed as the code can be dense and full of references to other files.
+-Debugging anything failing tests.
+-Turn on the LLVM optimiser 
+-Benchmarking
+-Support for python 3 static typing/python 3
+-Support for more AST nodes.
+-Split up the toplevel file into smaller parts perhaps
+-Some of the e.g type mapping code has been repeated in parts and could be put into another file
+-A lot of the naming is inconsistent and perhaps confusing in places.
+
+
+
+
