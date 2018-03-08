@@ -49,15 +49,25 @@ While/If/Cond statements aren't tested and almost certainly have a few small pro
 
 TODOs for project:
 -Various #TODOs through the code
+
 -Test cases and a test program for iterating through all tests
+
 -A lot of commenting needed as the code can be dense and full of references to other files.
+
 -Debugging anything failing tests.
+
 -Turn on the LLVM optimiser 
+
 -Benchmarking
+
 -Support for python 3 static typing/python 3
+
 -Support for more AST nodes.
+
 -Split up the toplevel file into smaller parts perhaps
+
 -Some of the e.g type mapping code has been repeated in parts and could be put into another file
+
 -A lot of the naming is inconsistent and perhaps confusing in places.
 
 
