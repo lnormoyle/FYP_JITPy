@@ -6,10 +6,15 @@ tests/ directory for test cases but at the moment there isn't much left. Also mi
 
 
 typedefs.py
+
 A few data structures for type inference
+
 TVar: A variable to be typed
+
 TFun: A function to be typed
+
 TCon: A type constructor to generate types
+
 TApp: A type applicator e.g for applying array type to int or double type
 
 datatypes.py 
@@ -48,6 +53,7 @@ While/If/Cond statements aren't tested and almost certainly have a few small pro
 
 
 TODOs for project:
+
 -Various #TODOs through the code
 
 -Test cases and a test program for iterating through all tests
